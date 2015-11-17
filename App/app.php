@@ -43,7 +43,7 @@ return $exedra->build('App', function($app)
 			'uri' => '',
 			'subroutes' => array(
 				'default' => array(
-					'uri' => '[**:view]',
+					'uri' => '[**:view?]',
 					'execute' => function($exe)
 					{
 						$view = implode('/', $exe->param('view'));
