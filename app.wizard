@@ -1,0 +1,4 @@
+<?php
+$app = require_once 'App\app.php';
+
+$app->wizard($argv);

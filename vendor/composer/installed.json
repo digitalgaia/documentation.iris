@@ -1,0 +1,48 @@
+[
+    {
+        "name": "rosengate/exedra",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Rosengate/exedra.git",
+            "reference": "29c8e6a0a89afa76ad4b824e762c3798de00c14c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Rosengate/exedra/zipball/29c8e6a0a89afa76ad4b824e762c3798de00c14c",
+            "reference": "29c8e6a0a89afa76ad4b824e762c3798de00c14c",
+            "shasum": ""
+        },
+        "time": "2015-11-12 16:47:20",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Exedra\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ahmad Rahimie Ahmad Zailani",
+                "email": "newrehmi@gmail.com",
+                "role": "lead"
+            }
+        ],
+        "description": "Nestful route oriented PHP micro framework",
+        "homepage": "http://github.com/rosengate/exedra",
+        "keywords": [
+            "exedra",
+            "framework",
+            "microframework",
+            "php",
+            "rosengate",
+            "route",
+            "router"
+        ]
+    }
+]
