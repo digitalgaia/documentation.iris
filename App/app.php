@@ -49,7 +49,7 @@ return $exedra->build('App', function($app)
 						$view = implode('/', $exe->param('view'));
 
 						if($view == '')
-							$view = 'index';
+							$view = 'iris/introduction';
 
 						$view = $exe->view->create($view);
 

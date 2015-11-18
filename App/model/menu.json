@@ -1,7 +1,7 @@
 {
-	"Introduction" : "index",
 	"IRIS" : ["iris", {
 		"Introduction" : "introduction",
+		"Why Exedra" : "whyexedra",
 		"Features" : "feature",
 		"Business Logics" : "logic"
 		}],
