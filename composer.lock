@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rosengate/exedra.git",
-                "reference": "a12029fb536aa3ca319d9d06f2502b2605e08c26"
+                "reference": "268585731d54b21663cb7fa7f5e4570caee2b70f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rosengate/exedra/zipball/a12029fb536aa3ca319d9d06f2502b2605e08c26",
-                "reference": "a12029fb536aa3ca319d9d06f2502b2605e08c26",
+                "url": "https://api.github.com/repos/Rosengate/exedra/zipball/268585731d54b21663cb7fa7f5e4570caee2b70f",
+                "reference": "268585731d54b21663cb7fa7f5e4570caee2b70f",
                 "shasum": ""
             },
             "type": "library",
@@ -48,7 +48,7 @@
                 "route",
                 "router"
             ],
-            "time": "2015-11-17 04:05:07"
+            "time": "2015-11-17 16:08:50"
         }
     ],
     "packages-dev": [],

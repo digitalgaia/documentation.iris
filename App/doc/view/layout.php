@@ -27,9 +27,19 @@
 		font-weight: bold;
 	}
 
+	.subnav li > a:hover
+	{
+		text-shadow: 0px 0px 50px black, 0px 0px 50px green;
+		background: none;
+	}
 	.subnav li > a
 	{
 		padding: 5px 0 5px 20px;
+	}
+
+	.list-sub .active
+	{
+		text-shadow: 0px 0px 50px black, 0px 0px 50px green;
 	}
 	</style>
 	<body>
@@ -39,7 +49,7 @@
 					<ul class='nav'>
 						<?php foreach($menu as $name => $path):?>
 							<?php if(is_string($path)):?>
-							<?php $url = $exe->url->create('@doc.default', array('view' => explode('/', $path)));?>
+							<?php $url = $exe->url->create('@doc.default', array('view' => $path));?>
 								<li><a href='<?php echo $url;?>'><?php echo $name;?></a></li>
 							<?php elseif(is_array($path)):
 							$basePath = $path[0];
@@ -47,9 +57,15 @@
 								<li class='list-sub'><a href='#'><?php echo $name;?></a>
 									<ul class='nav subnav'>
 										<?php foreach($path[1] as $subname => $subpath):
-										$url = $exe->url->create('@doc.default', array('view' => explode('/', $basePath.'/'.$subpath)));
+										$url = $exe->url->create('@doc.default', array('view' => $basePath.'/'.$subpath));
 										?>
-										<li><a href='<?php echo $url;?>';?><?php echo $subname;?></a></li>
+										<?php 
+										if($exe->isRoute('@doc.default', array('view' => $basePath.'/'.$subpath)))
+											$active = 'class="active"';
+										else
+											$active = '';?>
+
+										<li><a <?php echo $active;?> href='<?php echo $url;?>';?><?php echo $subname;?></a></li>
 										<?php endforeach;?>
 									</ul>
 								</li>
