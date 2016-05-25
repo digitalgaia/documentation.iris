@@ -1,5 +1,5 @@
 <?php
 
-require_once __DIR__.'/../App/app.php';
+$app = require_once __DIR__.'/../App/app.php';
 
-$exedra->dispatch();
+$app->dispatch();
