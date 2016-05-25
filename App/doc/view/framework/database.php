@@ -29,6 +29,32 @@ db::from('user');
 db::order_by('userCreatedDate', 'asc');
 db::get()->result();
 </code></pre>
+<h4>1.4 join</h4>
+<p>left join</p>
+<pre><code>
+db::from('user')
+->join('user_profile', 'user.userID = user_profile.userID')
+->get()->result();
+</code></pre>
+<p>inner join</p>
+<pre><code>
+db::from('user')
+->innerJoin('user_profile', 'user.userID = user_profile.userID')
+->get()->result();
+</code></pre>
+<h4>1.5 limit</h4>
+<p>limit($limit)</p>
+<pre><code>
+db::from('user')
+->limit(1)
+->get()->result();
+</code></pre>
+<p>limit($limit, $offset)</p>
+<pre><code>
+db::from('user')
+->limit(10, 0)
+->get()->result();
+</code></pre>
 <h3>2. Execute and fetch results</h3>
 <h4>2.1 get</h4>
 <p>Execute query</p>

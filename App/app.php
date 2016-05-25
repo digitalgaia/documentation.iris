@@ -15,6 +15,13 @@ $app->map->middleware(function($exe)
 	return $exe->next($exe);
 });
 
+$app->map->get('/download')->execute(function($exe)
+{
+	$jquery = new \Exedra\File('https://code.jquery.com/jquery-2.2.4.min.js');
+
+	$exe->path['public']->putContents('js/jquery.min.js', $jquery->getContents());
+});
+
 $app->map->addRoutes(array(
 	'login' => array(
 		'uri' => 'auth',

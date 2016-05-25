@@ -79,8 +79,14 @@
 			</div>
 		</div>
 		<!-- jQuery -->
-		<!-- <script src="//code.jquery.com/jquery.js"></script> -->
+		<script src="<?php echo $exe->url->asset('js/jquery.min.js');?>"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="<?php echo $exe->url->asset('bootstrap/js/bootstrap.min.js');?>"></script>
+		<script type="text/javascript">
+		$('pre code').each(function()
+		{
+			$(this).html($(this).html().trim());
+		});
+		</script>
 	</body>
 </html>
