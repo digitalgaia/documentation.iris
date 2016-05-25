@@ -40,7 +40,7 @@ $app->map->addRoutes(array(
 			}
 		),
 	'doc' => array(
-		'module' => 'doc',
+		'module' => 'Doc',
 		'middleware' => function($exe)
 		{
 			if(!$exe->session->has('logged'))
